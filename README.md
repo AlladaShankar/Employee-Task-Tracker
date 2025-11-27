@@ -1,4 +1,4 @@
-# Employee Task Tracker - Complete Edition
+# Employee Task Tracker
 
 Full-featured React application for managing employees and tasks with add/delete functionality.
 
