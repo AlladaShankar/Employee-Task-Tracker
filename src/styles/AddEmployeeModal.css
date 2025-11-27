@@ -1,0 +1,7 @@
+.modal-employee { max-width: 600px; }
+.employee-form { padding: 1.5rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 600px) {
+  .modal-employee { width: 95vw; }
+  .form-row { grid-template-columns: 1fr; }
+}

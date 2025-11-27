@@ -1,0 +1,68 @@
+.employee-card {
+  background: var(--bg-alt);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.employee-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.employee-card-header { display: flex; justify-content: space-between; align-items: center; }
+.employee-header {
+  padding: 1.5rem;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.employee-header:hover { background: rgba(33,150,243,0.05); }
+.employee-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.employee-info { flex: 1; }
+.employee-name { margin: 0 0 0.25rem 0; font-size: 1.2rem; font-weight: 700; }
+.employee-role { margin: 0 0 0.1rem 0; font-size: 0.95rem; color: var(--primary); font-weight: 600; }
+.employee-department { margin: 0 0 0.3rem 0; font-size: 0.85rem; color: var(--text-secondary); }
+.employee-email { margin: 0; font-size: 0.8rem; color: var(--text-secondary); }
+.btn-delete-emp {
+  padding: 0.5rem 1rem;
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.btn-delete-emp:hover { background: #c0392b; }
+.btn-delete-emp.confirm { background: #c0392b; font-size: 1.1rem; }
+.employee-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  padding: 1rem 1.5rem;
+  background: var(--bg);
+}
+.stat { display: flex; justify-content: space-between; align-items: center; }
+.stat .label { font-size: 0.85rem; color: var(--text-secondary); }
+.stat .value { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
+.completion-bar-container { padding: 1rem 1.5rem; }
+.completion-label { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.completion-bar { height: 8px; background: var(--border); border-radius: 10px; overflow: hidden; }
+.completion-fill { height: 100%; background: linear-gradient(90deg, var(--success), var(--primary)); border-radius: 10px; transition: width 0.5s ease; }
+.tasks-list { padding: 1rem; max-height: 300px; overflow-y: auto; }
+.no-tasks { text-align: center; color: var(--text-secondary); padding: 1rem; font-style: italic; }

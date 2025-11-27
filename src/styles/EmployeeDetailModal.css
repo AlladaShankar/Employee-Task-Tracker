@@ -1,0 +1,51 @@
+.modal-large {
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-header-employee { display: flex; align-items: center; gap: 1rem; flex: 1; }
+.modal-header-employee h2 { margin: 0; font-size: 1.5rem; }
+.modal-subtitle { margin: 0; font-size: 0.9rem; color: var(--text-secondary); }
+.modal-header-actions { display: flex; gap: 0.5rem; }
+.modal-body { padding: 1.5rem; }
+.employee-details { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+.detail-item { display: flex; flex-direction: column; }
+.detail-item .label { font-weight: 600; color: var(--text-secondary); margin-bottom: 0.3rem; }
+.detail-item .value { font-size: 1rem; color: var(--text); }
+.employee-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.stat-box {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.stat-label { display: block; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.stat-value { display: block; font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.completion-bar-container { margin-bottom: 2rem; }
+.completion-label { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.completion-bar { height: 10px; background: var(--border); border-radius: 10px; overflow: hidden; }
+.completion-fill { height: 100%; background: linear-gradient(90deg, var(--success), var(--primary)); }
+.employee-tasks { margin-top: 2rem; }
+.employee-tasks h3 { margin: 0 0 1rem 0; font-size: 1.2rem; }
+.employee-tasks .no-tasks { text-align: center; padding: 2rem 1rem; }
+.tasks-list { display: flex; flex-direction: column; gap: 0.8rem; }
+.task-item {
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+  transition: 0.3s;
+}
+.task-item:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.task-item.task-completed { border-left-color: var(--success); }
+.task-item.task-in-progress { border-left-color: var(--warning); }
+.task-item.task-pending { border-left-color: var(--danger); }
+.task-title-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.task-title-section h4 { margin: 0; font-size: 1rem; }
+.task-details { display: flex; gap: 1.5rem; font-size: 0.9rem; margin-bottom: 0.8rem; }
+.task-controls { display: flex; gap: 0.5rem; align-items: center; }
+@media (max-width: 768px) {
+  .modal-large { max-width: 95vw; }
+  .employee-details { grid-template-columns: 1fr; }
+  .employee-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}

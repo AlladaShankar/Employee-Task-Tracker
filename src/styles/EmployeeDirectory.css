@@ -1,0 +1,6 @@
+.employee-section { margin-top: 2rem; }
+.section-title { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.employees-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1.5rem; }
+.no-employees { text-align: center; padding: 3rem 1rem; color: var(--text-secondary); font-size: 1.1rem; }
+@media (max-width: 1024px) { .employees-grid { grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); } }
+@media (max-width: 768px) { .employees-grid { grid-template-columns: 1fr; } }
