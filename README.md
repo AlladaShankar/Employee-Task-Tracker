@@ -30,7 +30,7 @@ Full-featured React application for managing employees and tasks with add/delete
 1. Extract: `unzip employee-task-tracker.zip`
 2. Install: `npm install`
 3. Run: `npm start`
-4. Open: http://localhost:3000
+4. Deployment Link: https://employee-task-tracker-xi.vercel.app/
 
 ## Usage
 
