@@ -50,6 +50,23 @@ Full-featured React application for managing employees and tasks with add/delete
 - Fill task details
 - Click "Add Task"
 
+## Framework and Libraries Used
+
+- **React 18**
+  - Functional components
+  - Hooks (`useState`, `useEffect`) for state and side effects
+- **JavaScript (ES6+)**
+- **CSS3** for styling
+  - Custom CSS files per component
+  - Flexbox and CSS Grid for layout
+  - CSS variables for color theme and tokens
+- **Browser localStorage**
+  - Persists employees and tasks across page refreshes
+  - Used as a lightweight mock “database”
+- **No backend / API**
+  - All data is handled on the client side
+  - Mock data loaded from a local module on first run
+
 ## Components
 
 - App.jsx - Main component
